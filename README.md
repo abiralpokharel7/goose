@@ -1,2 +1,2 @@
 # goose
-google online store
+goose online store to buy goose
