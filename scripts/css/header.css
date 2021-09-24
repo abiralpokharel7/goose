@@ -1,0 +1,24 @@
+body{
+    background-color: white;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+span#gooselogo{
+    color: black;
+    margin-left: 40%;
+    
+}
+#gooseimg{
+    height: 120px;
+    width: 120px;
+    
+}
+button#honkmenu{
+    height:120px;
+    width: 120px;
+    float: right;
+    margin-top: 8px;
+    color: orange;
+    
+}

@@ -1,1 +1,9 @@
 /* for index.html page */
+div#header{
+    width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+div#goose{
+  
+}
