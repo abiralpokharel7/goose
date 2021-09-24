@@ -7,3 +7,10 @@ div#header{
 div#goose{
   
 }
+body{
+    background-image: url('/images/goosebg.png');
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background-size: 1100px 1100px;
+}
