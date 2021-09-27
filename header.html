@@ -1,19 +1,23 @@
 <html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="scripts/css/header.css">
-    </head>
+    <head><title></title></head>
+    <link rel="stylesheet" href="/scripts/css/header.css">
     <body>
-        <div id="logo" class="logo"> 
-            <img src="/images/goose_favicon.jpg" alt="" height="125px" width="125px" id="gooseimg">
-            <img src="/images/goose.png" alt="" height="125px" width="500px" id="goose" style="margin-left: 25%;"> <!--placeholder-->
-            <!-- <span id="gooselogo" >GOOSE</span> -->
-            <!-- button for dropdown-->
-            <button id="honkmenu"  onmouseover="honkmenuHover()"> <a href="index.html" id="honkLink"> HONK</a></button><br>
-            <button id="honkmenu2" style="visibility: hidden; float: right; "> <a href="contact.html" id="honkLink"> Contact</a></button><br>
-            <button id="honkmenu3" style="visibility: hidden; float: right; "> <a href="goosetut.html" id="honkLink"> GooseTut</a></button>
-            <script src="/scripts/js/header.js"></script>
-        </div>
-        <audio src="/audio/goose.m4a" style="visibility: hidden;" autoplay loop ></audio>
-    </body> 
+        <div class="navbar">
+            <img src="/images/goose_favicon.jpg" alt="" height="125px" width="auto" style="margin: 0 auto;">
+            <img src="/images/goose.png" alt="" height="125px" width="500px" style="margin-left: 500px;">
+            <div class="dropdown" style="float: right;">
+              <button class="dropbtn" style="margin-top:25px; margin-right: 25px;">
+                  <a href="index.html">Home</a> 
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="contact.html">Contact</a>
+                <a href="goosetut.html">How2Goose</a>
+                <a href="#">Upload</a>
+              </div>
+            </div> 
+           
+          </div>
+          <script src="/scripts/js/header.js"></script>
+    </body>
 </html>

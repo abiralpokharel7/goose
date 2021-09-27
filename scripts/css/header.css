@@ -1,33 +1,64 @@
-body{
-    
-    color: black;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
-}
-span#gooselogo{
-    color: black;
-    margin-left: 40%;
-    
-}
-#gooseimg{
-    height: 120px;
-    width: 120px;
-    
-}
-button#honkmenu{
-    
-    float: right;
-    color: orange;
-}
-#honkLink{
-    text-decoration: none;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255,0.7);
+    border-radius: 25px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
     color: white;
-}
-button{
-    height: 55px;
-    width: 100px;
-    background-color: orange;
-    border-radius: 5px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
     border: none;
-   
-}
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: orange;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(255, 196, 0);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
