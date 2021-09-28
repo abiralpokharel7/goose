@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <div class="product">
+        
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span> <br>
+            <button id="butButton">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton1">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton2">Buy</button><br>
+        </div><br>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton3">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton4">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton5">Buy</button><br>
+        </div>
+        
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span> <br>
+            <button id="butButton6">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton7">Buy</button><br>
+        </div>
+        <div class="productShow">
+            <img src="" alt="" id="productImg"><br>
+            <span id="productDesc">$0.01</span><br>
+            <button id="butButton8">Buy</button><br>
+        </div><br>
+      
+    </div>
+    <script>
+        var butButton = document.getElementById('butButton')
+        butButton.addEventListener('click',onButButton)
+        function onButButton(){
+            alert('out of stock')
+        }
+        var butButton1 = document.getElementById('butButton1')
+        butButton1.addEventListener('click',onButButton)
+        function onButButton(){
+            let name = alert(prompt('Enter your name')+' order succesful');
+            
+        }var butButton2 = document.getElementById('butButton2')
+        butButton2.addEventListener('click',onButButton)
+        function onButButton(){
+            let name = alert(prompt('Enter your name')+' your order is succesful and nice choice');
+            
+        }var butButton3 = document.getElementById('butButton3')
+        butButton3.addEventListener('click',onButButton)
+        function onButButton(){
+            let name = alert('tough luck! out of stock, talk to manager')
+            
+        }
+    </script>
+</body>
+</html>
+<style>
+    .product{
+        height: auto;
+        width: 800px;
+        background-color: rgba(255, 251, 0, 0.6);
+        overflow-y: hidden;
+        overflow-x: hidden;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .productShow{
+        height: auto;
+        width: auto;
+        display: inline-block;
+        margin-left: 25px;
+        margin-right: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
+        
+    }
+    img#productImg{
+        height: 220px;
+        width: 220px;
+        background-color: black;
+        border-radius: 5px;
+    }
+    button:hover{
+        background-color: white;
+    }
+    span{
+        font-size: 15px;
+    }
+</style>
