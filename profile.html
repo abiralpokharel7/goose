@@ -1,53 +1,11 @@
-<html>
-    <head>
-        <title></title>
-    </head>
-    <style></style>
-    <body>
-        <p id="gooseText">Upload your goose here ↓<br>400px*400px would be best</p>
-        <div class="uploadProfile">
-          <input type="file" id="inputImage"/> <br>
-
-            <div id="showProfileHere" height="500px" width="500px">
-                <center><img src="" alt="" height="400px" width="400px"  style="margin-top:5%;"></center>
-                <br>
-                <span id="textSuggestion"> <center> hi</center></span>
-            </div> 
-            <br>
-            <button id="submitGoose">Upload</button>
-
-        </div>
-    </body>
-</html>
-<style>
-    #showProfileHere{
-        height: 500px;
-        width: 500px;
-        background-color: rgb(255, 255, 0,0.6);
-        border-radius: 25px;
-    }
-    #gooseText{
-        height: 50px;
-        width: 500px;
-        background-color: rgb(199, 255, 88);
-        text-align: center;
-        border-radius: 25px;
-        padding-top: 35px ;
-
-    }
-    #submitGoose{
-        height:30px;
-        width: 100px;
-        text-align: center;
-        border-radius: 25px;
-        border: 0px;
-        background-color: yellowgreen;
-        color: white;
-    }
-    #submitGoose:hover{
-        background-color: rgb(154, 205, 50,0.6)
-    }
-</style>
+<p id="suggestionText">Upload your picture here! 250px*250px </p>
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" ></p>
+<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
+<p><img id="output" width="200" /></p>
+<button id="submitButton">Submit</button>
 <script>
-    
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
 </script>
