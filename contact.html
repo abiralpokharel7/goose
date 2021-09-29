@@ -3,7 +3,8 @@
         <title>Contact Info</title>
         <style>
             #body{
-                background-color: rgb(172, 156, 156);
+                background-image: url("images/goosebg.png"); 
+                background-size: 1100px 1100px;
             }
             #header1{
                 font-size: 20pt;
@@ -18,14 +19,30 @@
                 height: 50px;
             }
             #para{
-                font-size: 20pt;
+                font-size: 30pt;
                 font-family: Verdana;
                 border: solid 2px #000000;
+                background-color: rgba(255,251, 0, 0.6);
+                font-weight: bold;
             }
         </style>
-        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <script>  
+            $(function(){ 
+            $("#header").load("header.html");  
+           // $("#footer").load("footer.html");  
+           
+            }); 
+        </script>  
     </head>
     <body id="body">
+        <div id="header" style="border: 1px solid rgb(0, 0, 0); border-radius: 25px;"></div> <br>
+        <!-- 
+        <div class="products">
+            <img src="images/goose_favicon.jpg" alt="" height="250px" width="250px"><br><span id="productDesc">hello</span><br><button id="addtoCart">Add to Cart</button>
+        </div>  make it transparent-->
+    
+        <div id="footer"></div> 
         <p id="para" >
             Contact info
         </p>
