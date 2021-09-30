@@ -1,11 +1,98 @@
-<p id="suggestionText">Upload your picture here! 250px*250px </p>
-<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" ></p>
-<p><label for="file" style="cursor: pointer;">Upload Image</label></p>
-<p><img id="output" width="200" /></p>
-<button id="submitButton">Submit</button>
-<script>
-var loadFile = function(event) {
-	var image = document.getElementById('output');
-	image.src = URL.createObjectURL(event.target.files[0]);
-};
-</script>
+<html>
+	<head></head>
+	<body>
+		<div id="maincontainer">
+		<p id="suggestionText">Upload your picture here! 250px*250px </p>
+		<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" ></p>
+		<div id="imgcontainer">
+			
+			<p><img id="output" width="250px" height="250px"/></p><br>
+			<button id="submitButton">Submit</button>
+		</div> <br>
+		
+		<script>
+			var loadFile = function(event) {
+			var image = document.getElementById('output');
+			image.src = URL.createObjectURL(event.target.files[0]);
+			let submitButton = document.getElementById('submitButton')
+			submitButton.addEventListener('click',onSubmitButton)
+			let file = document.getElementById('output').src;
+
+		function onSubmitButton(){
+			if(image.src=''){
+				document.getElementById('suggestionText').innerHTML = 'Upload an image first'
+			}	
+			document.getElementById('suggestionText').style.color='black'
+			document.getElementById('suggestionText').innerHTML = 'Your goose has been uploaded and is under review! For more information follow the link'
+			image.src = URL.createObjectURL(event.target.files[0]);
+		}
+		};
+		</script>
+		</div>
+	</body>
+	<style>
+		#suggestionText{
+			height: auto;
+			width: 500;
+			background-color: rgb(255, 217, 0);
+			text-align: center;
+			border-radius: 5px;
+			color: green;
+		}
+		input#file{
+			height: auto;
+			width: 500px;
+			color: black;
+			background-color: rgb(255, 251, 0);
+			padding-left: 150px;
+			border-radius: 0;
+			
+		}
+		img#output{
+			background-color: rgba(255, 255, 255, 0.6);
+			margin-left: 120px;
+			margin-top: 70px;
+			border-radius: 5px;
+		}
+		div#imgcontainer{
+			border-radius: 5px;
+			height: 500px;
+			width: 500px;
+			background-color: rgba(251, 255, 0, 0.6);
+			
+			
+			
+		}
+		button#submitButton{
+			margin-left: 185px;
+			height: 30px;
+			width: 100px;
+			text-align: center;
+			border-radius: 5px;
+			border: none;
+			background-color: rgb(255, 196, 0);
+			color: black;
+		}
+		button#submitButton:hover{
+			background-color: rgb(255, 196, 0,0.6);
+		}
+		div#maincontainer{
+			height: 500px;
+			width: 500px;
+			border: 1px solid rgb(255, 251, 0);
+			background-color: rgba(255, 174, 0, 0.8);
+			border-radius: 5px;
+			margin: auto;
+		}
+		p#suggestionText{
+			font-size: 18px;
+		}
+		p{
+			margin: auto;
+			
+		}
+	</style>
+	<script>
+	</script>
+</html>
+

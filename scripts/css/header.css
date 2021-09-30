@@ -13,7 +13,6 @@ body {
     font-size: 16px;
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
   }
   
@@ -27,16 +26,18 @@ body {
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
-    background-color: orange;
+    /*padding: 14px 16px;*/
+    background-color: transparent;
     font-family: inherit;
     margin: 0;
+    height: auto;
+    width: auto;
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: rgb(255, 196, 0);
+    background-color: transparent;
   }
-  
+ 
   .dropdown-content {
     display: none;
     position: absolute;
@@ -54,7 +55,7 @@ body {
     display: block;
     text-align: left;
   }
-  
+ 
   .dropdown-content a:hover {
     background-color: #ddd;
   }
@@ -62,3 +63,20 @@ body {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+  @media (max-width:1380px) {
+    img#goosebanner {
+      display: none;
+    }
+  }
+.notSupported{
+visibility: hidden;
+}
+  @media (max-width:510px) {
+   *{
+     display: none;
+   }
+   .notSupported{
+     visibility: visible;
+   }
+
+  

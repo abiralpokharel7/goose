@@ -2,17 +2,18 @@
     <head><title></title></head>
     <link rel="stylesheet" href="/scripts/css/header.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <body>
-        <div class="navbar">
+        <div class="navbar" style="margin-bottom: 5px; ">
             <img src="/images/goose.png" alt="" height="125px" width="auto" style="margin: 0 auto; border-radius: 20px;">
-            <img src="/images/gooseww.png" alt="" height="125px" width="500px" style="margin-left: 500px;">
+            <img src="/images/gooseww.png" alt="" height="125px" width="500px" style="margin-left: 500px;" id="goosebanner">
             <div class="dropdown" style="float: right;">
-              <button class="dropbtn" style="margin-top:25px; margin-right: 25px;">
-                  <a href="index.html"><img src="/images/honkdown.png " style="height:100px; width:auto"></a> 
+              <button class="dropbtn" style="margin-top:0px; margin-right: 25px; margin-bottom: 1px;">
+                  <a href="index.html"><img src="images/honk.png" id="honkdown"  style="height: 100px; width:auto; padding-bottom: 15px;" onmouseover="onHonkHover()" onmouseleave="onHonkDown()" onclick="onHonkClick()"></a> 
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="contact.html">Contact</a>
+               
                 <a href="goosetut.html">How2Goose</a>
                 <a href="upload.html">Upload</a>
                 <a href="help.html">Help</a>
@@ -22,5 +23,17 @@
           </div>
           <script src="/scripts/js/header.js"></script>
           <audio src="/audio/goose.m4a" autoplay loop></audio>
+          <script>
+            function onHonkHover(){
+              document.getElementById('honkdown').src='images/honkdown.png';
+            }
+            function onHonkDown(){
+              document.getElementById('honkdown').src='images/honk.png'
+            }
+            function onHonkClick(){
+              document.getElementById('honkdown').src='images/honkdown.png'
+            }
+          </script>
+          <div class="notSupported">Device Not Supported</div>
     </body>
 </html>
