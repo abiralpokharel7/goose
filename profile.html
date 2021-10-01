@@ -23,7 +23,8 @@
 				document.getElementById('suggestionText').innerHTML = 'Upload an image first'
 			}	
 			document.getElementById('suggestionText').style.color='black'
-			document.getElementById('suggestionText').innerHTML = 'Your goose has been uploaded and is under review! For more information follow the link'
+			document.getElementById('suggestionText').innerHTML = 'Your goose has been uploaded and is under review! For more information follow the <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ/" target="blank"> link</a>'
+
 			image.src = URL.createObjectURL(event.target.files[0]);
 		}
 		};
