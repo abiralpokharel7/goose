@@ -68,4 +68,12 @@ div#box{
     font-size: 20pt;
     font-family: verdana;
 }
+#imagedes{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+#imagetext{
+    margin-left: 6%;
+}
 /* try animation bg */
