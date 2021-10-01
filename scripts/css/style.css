@@ -70,10 +70,18 @@ div#box{
 }
 #imagedes{
     margin-top: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin-left: 50%;
+    margin-bottom: 1%;
 }
 #imagetext{
-    margin-left: 6%;
+    margin-left: 51.2%;
+}
+#arrow{
+    margin-left: 52.7%;
+}
+#imagedes2{
+    margin-top: 5%;
+    margin-left: 50%;
+    margin-bottom: 1%;
 }
 /* try animation bg */
