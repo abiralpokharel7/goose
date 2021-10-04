@@ -81,7 +81,19 @@ div#box{
 }
 #imagedes2{
     margin-top: 5%;
-    margin-left: 50%;
+    margin-left: 85%;
     margin-bottom: 1%;
 }
+#imagedes3{
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 1%;
+}
+#celldes{
+    width: 2000px;
+}
+#celldes2{
+    width: 2000px;
+}
+
 /* try animation bg */

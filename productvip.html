@@ -10,50 +10,50 @@
     <div class="product">
         
         <div class="productShow">
-            <img src="images/bob.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span> <br>
-            <button id="butButton">Buy</button><br>
+            <img src="images/starbob.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$10</span> <br>
+            <button id="butButton" class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/god1.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton1">Buy</button><br>
+            <img src="images/ohno.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$20</span><br>
+            <button id="butButton1"  class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/korb.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton2">Buy</button><br>
+            <img src="images/kurbstomp.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$10</span><br>
+            <button id="butButton2"  class="buyButton">Buy</button><br>
         </div><br>
         <div class="productShow">
-            <img src="images/lovebomb.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton3">Buy</button><br>
+            <img src="images/skullbomb.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$10</span><br>
+            <button id="butButton3"  class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/gooselow.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.02</span><br>
-            <button id="butButton4">Buy</button><br>
+            <img src="images/coolgooselow.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$8,000,000,000</span><br>
+            <button id="butButton4"  class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/smith.png" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton5">Buy</button><br>
+            <img src="images/coolsmith.png" alt="" id="productImg"><br>
+            <span id="productDesc">$20</span><br>
+            <button id="butButton5"  class="buyButton">Buy</button><br>
         </div>
         
         <div class="productShow">
-            <img src="images/table.png" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span> <br>
-            <button id="butButton6">Buy</button><br>
+            <img src="images/theroyaltable.png" alt="" id="productImg"><br>
+            <span id="productDesc">$100</span> <br>
+            <button id="butButton6"  class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/bana.png" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton7">Buy</button><br>
+            <img src="images/nanab.png" alt="" id="productImg"><br>
+            <span id="productDesc">$Banana</span><br>
+            <button id="butButton7"  class="buyButton">Buy</button><br>
         </div>
         <div class="productShow">
-            <img src="images/shine.jpg" alt="" id="productImg"><br>
-            <span id="productDesc">$0.01</span><br>
-            <button id="butButton8">Buy</button><br>
+            <img src="images/orange.jpg" alt="" id="productImg"><br>
+            <span id="productDesc">$5</span><br>
+            <button id="butButton8"  class="buyButton">Buy</button><br>
         </div><br>
       
     </div>
@@ -61,42 +61,42 @@
         var butButton = document.getElementById('butButton')
         butButton.addEventListener('click',onButButton0)
         function onButButton0(){
-            alert('out of stock')
+            alert('No')
             butButton.disabled=true;
         }
         var butButton1 = document.getElementById('butButton1')
         butButton1.addEventListener('click',onButButton1)
         function onButButton1(){
-             alert(prompt('Enter your name')+' order succesful');
+             alert(prompt('Enter your name')+' check behind you.');
              butButton1.innerHTML = 'bought';
              butButton1.disabled=true;
             
         }var butButton2 = document.getElementById('butButton2')
         butButton2.addEventListener('click',onButButton2)
         function onButButton2(){
-             alert(prompt('Enter your name')+' your order is succesful and Sebastian suggested one ');
+             alert(prompt('Enter your name')+' Sebastian stole this from you ');
              butButton2.disabled=true;
             
         }var butButton3 = document.getElementById('butButton3')
         butButton3.addEventListener('click',onButButton3)
         function onButButton3(){
-             alert('tough luck! out of stock, talk to manager')
+             alert('We dont have this.')
              butButton3.disabled=true;
         }var butButton4 = document.getElementById('butButton4')
         butButton4.addEventListener('click',onButButton4)
         function onButButton4(){
-             alert('tough luck! out of stock')
+             alert('Cool choice! We....lost it.')
              butButton4.disabled=true;
         }var butButton5 = document.getElementById('butButton5')
         butButton5.addEventListener('click',onButButton5)
         function onButButton5(){
-            alert(prompt('Enter your name')+' order succesful, your choice is whack');
+            alert(prompt('Enter your name')+' Please leave us alone');
              butButton5.innerHTML = 'bought';
              butButton5.disabled=true;
         }var butButton6 = document.getElementById('butButton6')
         butButton6.addEventListener('click',onButButton6)
         function onButButton6(){
-            alert(prompt('Enter your name')+' order succesful, noice choice');
+            alert(prompt('Enter your name')+' order succesful!');
              butButton6.innerHTML = 'bought';
              butButton6.disabled=true;
         }var butButton7 = document.getElementById('butButton7')
@@ -108,7 +108,7 @@
         }var butButton8 = document.getElementById('butButton8')
         butButton8.addEventListener('click',onButButton8)
         function onButButton8(){
-             alert('tough luck! out of stock, talk to manager')
+             alert('We dont have a manager, dont ask')
              butButton8.disabled=true;
         }
     </script>
@@ -125,9 +125,10 @@
         overflow-y: hidden;
         overflow-x: hidden;
         margin: 0 auto;
-        border-radius: 25px;
+        border-radius: 5px;
         overflow-x:scroll;
     }
+    
     .productShow{
         height: auto;
         width: auto;
@@ -136,14 +137,40 @@
         margin-right: 0;
         margin-top: 30px;
         margin-bottom: 30px;
+        border: 2px solid white;
+        background-color: goldenrod;
+        text-align: center;
+        color:white;
+        border-radius: 25px;       
         
+    }
+    .productShow:hover{
+        height: auto;
+        width: auto;
+        display: inline-block;
+        margin-left: 27px;
+        margin-right: 0;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border: 2px solid goldenrod;
+        background-color: goldenrod;
+        text-align: center;
+        color:white;
+        border-radius: 25px;       
         
     }
     img#productImg{
         height: 220px;
         width: 220px;
         background-color: black;
-        border-radius: 5px;
+        border-radius: 25px 25px 0px 0px;
+    }
+    img#productImg:hover{
+        height: 220px;
+        width: 220px;
+        filter: contrast(200%);
+        border-radius: 25px 25px 0px 0px;
+        
     }
     button:hover{
         background-color: white;
@@ -152,7 +179,15 @@
     span{
         font-size: 15px;
     }
-   
+   .buyButton{
+       background-color: gold;
+       color: black;
+       border: none;
+       font-weight: bold;
+       border-radius: 5px;
+       width: 50px;
+       height: 20px;
+   }
     
 
 
