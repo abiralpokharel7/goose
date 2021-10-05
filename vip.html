@@ -42,9 +42,9 @@
             let teacherName = prompt('VIP Page is free for everyone in App Development Class\n Enter the first name of your teacher: ').toUpperCase();
             if (teacherName !== 'GREG') {
                 alert('Sorry you cannot access the page!')
-                
-                
+            
                 document.getElementById('joinVipText').style.visibility="visible";
+                window.open('index.html');
                 
             }else{
                 document.getElementById('product').style.visibility="visible";
