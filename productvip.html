@@ -7,6 +7,11 @@
     <title></title>
 </head>
 <body>
+    <script>
+        if (window.location.href === 'http://localhost:5501/productvip.html') {
+            window.location.replace("http://localhost:5501/vip.html");
+        }
+    </script>
     <div class="product">
         
         <div class="productShow">
@@ -127,6 +132,7 @@
         margin: 0 auto;
         border-radius: 5px;
         overflow-x:scroll;
+        
     }
     
     .productShow{
@@ -168,8 +174,8 @@
     img#productImg:hover{
         height: 220px;
         width: 220px;
-        filter: contrast(200%);
         border-radius: 25px 25px 0px 0px;
+        
         
     }
     button:hover{
@@ -185,7 +191,7 @@
        border: none;
        font-weight: bold;
        border-radius: 5px;
-       width: 50px;
+       width: 60px;
        height: 20px;
    }
     

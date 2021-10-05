@@ -8,12 +8,14 @@
     
     <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
     <script>  
+        
         $(function(){ 
         $("#header").load("header.html");  
         $("#footer").load("footer.html");  
         $("#product").load("productvip.html"); 
        
         }); 
+        
     </script>  
     <body>
         <!-- logo -->
@@ -24,17 +26,36 @@
 
         <!-- dropdown-->
         <div id="header" style="border-radius: 25px;"></div> <br>
+        <div id="product" style="border-radius: 25px;"></div> 
+        <div id="vipLogin" style="border-radius: 25px;" style="visibility: hidden;">
+            <p id="joinVipText" style="visibility: hidden;"><a href="https://ia601602.us.archive.org/11/items/Rick_Astley_Never_Gonna_Give_You_Up/Rick_Astley_Never_Gonna_Give_You_Up.mp4">Join VIP</a><br>Only $100 per month!</p>
+        </div>
+        </div> 
+        
+         
 
-         <div id="product" style="border-radius: 25px; border: 2px solid goldenrod;"></div> 
-        <div id="footer"></div> 
 
-
-
-        <script src="">
+        <script>
+            
+            document.getElementById('header').style.visibility="hidden";
+            document.getElementById('product').style.visibility="hidden";
+            let teacherName = prompt('VIP Page is free for everyone in App Development Class\n Enter the first name of your teacher: ').toUpperCase();
+            if (teacherName !== 'GREG') {
+                alert('Sorry you cannot access the page!')
+                
+                
+                document.getElementById('joinVipText').style.visibility="visible";
+                window.location.replace("index.html");
+            }else{
+                document.getElementById('product').style.visibility="visible";
+                document.getElementById('header').style.visibility="visible";
+                document.getElementById('joinVipText').style.visibility="hidden";
+            }
             
         </script>
         <style>
             
         </style>
+        <div id="footer"></div> 
     </body>
 </html>

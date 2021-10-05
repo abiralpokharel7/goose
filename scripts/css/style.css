@@ -75,6 +75,7 @@ div#box{
 }
 #imagetext{
     margin-left: 51.2%;
+    font-size: 20pt;
 }
 #arrow{
     margin-left: 52.7%;
@@ -88,6 +89,7 @@ div#box{
     margin-top: 5%;
     margin-left: 15%;
     margin-bottom: 1%;
+    padding: none;
 }
 #celldes{
     width: 2000px;
@@ -95,5 +97,14 @@ div#box{
 #celldes2{
     width: 2000px;
 }
-
+#arrow2{
+    margin-left:45.2%;
+}
+#imagetext2{
+    margin-left: 51%;
+    font-size: 20pt;
+}
+#arrow3{
+    margin-left:13.6%;
+}
 /* try animation bg */
