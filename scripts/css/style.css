@@ -16,8 +16,7 @@ body{
 }
 div#box{
     border:solid 2px black;
-    background-color:rgba(255,251, 0, 0.6); 
-    opacity: 90%;
+    background-color: rgb(243,194,33,0.6); 
     border-radius: 14px;
     font-size: 20pt;
 }
