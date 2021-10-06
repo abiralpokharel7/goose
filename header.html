@@ -10,7 +10,7 @@
         }
     </script>
         <div class="navbar" style="margin-bottom: 5px; ">
-            <img src="/images/gooselogo.png" alt="" height="125px" width="auto" style="margin: 0 auto; border-radius: 20px;" id="gooselogo"> 
+            <img src="/images/gooselogo.png" alt="" height="125px" width="auto" style="margin: 0 auto; border-radius: 20px;" id="gooselogo" onmouseover="onLogoHover()" onmouseleave="onLogoHoverOut()"> 
             <img src="/images/gooseww.png" alt="" height="125px" width="500px" style="margin-left: 500px;" id="goosebanner">
             <div class="dropdown" style="float: right;">
               <button class="dropbtn" style="margin-top:0px; margin-right: 25px; margin-bottom: 1px;">
@@ -60,7 +60,31 @@
             function onHonkClick(){
               document.getElementById('honkdown').src='images/honkdown.png'
             }
+            function onLogoHover(){
+              document.getElementById('gooselogo').src = 'images/rickroll.gif'
+            }
+            function onLogoHoverOut(){
+                
+              if (window.location.href === 'http://localhost:5501/index.html') {
+              document.getElementById('gooselogo').src = 'images/gooselogo.png'
+            }
+              if (window.location.href === 'http://localhost:5501/about.html') {
+              document.getElementById('gooselogo').src = 'images/goose.png'
+            }
+            if (window.location.href === 'http://localhost:5501/help.html') {
+              document.getElementById('gooselogo').src = 'images/helpg.png'
+            }
+            if (window.location.href === 'http://localhost:5501/goosetut.html') {
+              document.getElementById('gooselogo').src = 'images/howtogoose.png'
+            }
             
+            if (window.location.href === 'http://localhost:5501/vip.html') {
+              document.getElementById('gooselogo').src = 'images/vipgoose.png'
+            }
+            if (window.location.href === 'http://localhost:5501/upload.html') {
+              document.getElementById('gooselogo').src = 'images/profilegoose.png'
+            }
+            }
           </script>
           <div class="notSupported">Device Not Supported</div>
     </body>
